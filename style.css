@@ -6558,7 +6558,7 @@ div.swiper-pagination-custom,
 }
 
 .page-header {
-  background-image: url(https://via.placeholder.com/1920x350.png);
+  background-image: url(images/about-banner.jpg);
 }
 
 /* Header */
@@ -6886,10 +6886,9 @@ div.tp-bullet:hover {
 .technology-v1 {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url('https://via.placeholder.com/1920x585.png');
+  background-color: #211F3B;
+  background-image: url(images/background/bg-art-5.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -7240,7 +7239,7 @@ div.tp-bullet:hover {
 }
 
 .ot-counter.v3 span {
-  color: #43BAFF;
+  color: #fff;
   font-size: 36px;
   ;
   padding-left: 0;
