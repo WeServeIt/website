@@ -2223,9 +2223,9 @@ a:active {
 }
 
 .page-header .breadcrumbs li:before {
-  content: "";
+  content: ">>";
   font-family: "FontAwesome";
-  font-size: 7px;
+  font-size: 16px;
   color: #43baff;
   margin: -3px 8px 0;
   display: inline-block;
@@ -4123,19 +4123,21 @@ object {
 .ot-image-box .overlay {
   z-index: 1;
   opacity: 1;
-  background: rgba(16, 120, 165, 0.2);
+  background: rgba(19, 49, 87, .7);
 }
 
-.ot-image-box h4 {
-  color: #fff;
-  position: absolute;
+.ot-image-box h4,
+p {
+  /* color: #fff;
+  z-index: 2; */
+  /* position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   font-size: 26px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 
 .ot-image-box img {
@@ -4161,13 +4163,13 @@ object {
   background: #43baff;
 }
 
-.ot-image-box:hover img {
+/* .ot-image-box:hover img {
   filter: none;
-}
+} */
 
-.ot-image-box:hover .overlay {
+/* .ot-image-box:hover .overlay {
   background: transparent;
-}
+} */
 
 @media (min-width: 768px) and (max-width: 991px) {
   .icon-box-s2.s2 {
@@ -7144,14 +7146,13 @@ div.tp-bullet:hover {
 }
 
 .section-consultation {
-  background-image: url(https://via.placeholder.com/1920x480.png);
+  /* background-image: url(images/services/consultation.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .section-consultation p {
-  color: #FFF;
   font-family: "Nunito Sans", Sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -7160,7 +7161,6 @@ div.tp-bullet:hover {
 }
 
 .section-consultation h2 {
-  color: #FFF;
   font-size: 72px;
   font-weight: 900;
   line-height: 80px;
@@ -7232,7 +7232,7 @@ div.tp-bullet:hover {
 
 .technology-v3 {
   background-color: #201C3D;
-  background-image: url(https://via.placeholder.com/1920x860.png);
+  background-image: url(images/background/bg-s2-home3.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9739,4 +9739,66 @@ section {
   .resolutions-hero-bottom {
     margin-top: 0px;
   }
+}
+
+
+.machine-learning {
+  background-image: url(images/services/machine-learning.png);
+  background-size: cover;
+  background-color: transparent;
+  position: relative;
+}
+
+.machine-learning::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 30, 59, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.machine-learning .page-title,
+.machine-learning ul li,
+.machine-learning p {
+  color: white !important;
+  z-index: 1;
+  position: relative;
+}
+
+.machine-learning ul li:before {
+  color: white !important;
+}
+
+.pricing-table-i6 {
+  background-color: #F2F3F8;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-image: url(images/background/bg1.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.image-box-wrap {
+  -webkit-box-shadow: 0 0 40px 5px rgb(51 51 51 / 10%);
+  box-shadow: 0 0 40px 5px rgb(51 51 51 / 10%);
+  background: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  min-height: calc(100% - 2rem);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
 }
