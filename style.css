@@ -9754,14 +9754,14 @@ section {
 }
 
 
-.machine-learning {
+.machine-learning, .cyber-security {
   background-image: url(images/services/machine-learning.png);
   background-size: cover;
   background-color: transparent;
   position: relative;
 }
 
-.machine-learning::before {
+.machine-learning::before, .cyber-security::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -9773,13 +9773,17 @@ section {
 
 .machine-learning .page-title,
 .machine-learning ul li,
-.machine-learning p {
+.machine-learning p,
+.cyber-security .page-title,
+.cyber-security ul li,
+.cyber-security p {
   color: white !important;
   z-index: 1;
   position: relative;
 }
 
-.machine-learning ul li:before {
+.machine-learning ul li:before,
+.cyber-security ul li:before {
   color: white !important;
 }
 
@@ -9820,4 +9824,8 @@ section {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
+}
+
+.cyber-security {
+  background-image: url(images/services/cyber-security/bg.png);
 }
