@@ -9274,7 +9274,7 @@ section {
   opacity: 0;
   outline: medium none;
   position: fixed;
-  right: 40px;
+  right: 35px;
   bottom: -20px;
   text-align: center;
   text-decoration: none;
@@ -9292,7 +9292,7 @@ section {
 
 #back-to-top.show {
   opacity: 1;
-  bottom: 40px;
+  bottom: 100px;
 }
 
 #back-to-top i:after,
@@ -9301,7 +9301,7 @@ section {
 }
 
 #back-to-top:hover {
-  bottom: 45px;
+  bottom: 105px;
 }
 
 /*--------------------------------------------------------------
@@ -9879,6 +9879,7 @@ section {
   transform: translate(-50%, 50%);
   height: 56px;
   width: 56px;
+  z-index: 1;
 }
 
 .circle-arrow .middle-dot {
